@@ -1,6 +1,5 @@
 'use strict';
-//git remote add origin https://github.com/kbdemba/Using-Gulp-Project-8.git
-//git push -u origin master
+
   const gulp = require("gulp"),
       concat = require("gulp-concat"),
     imagemin = require('gulp-imagemin'),
@@ -20,7 +19,7 @@ gulp.task("concatScripts", function(){
     .pipe(maps.init())
     .pipe(concat("all.js"))
     .pipe(maps.write("./"))
-    .pipe(gulp.dest('dist/scripts')) 
+    .pipe(gulp.dest('dist/scripts'))
 })
 
 //minify the concatenated js file
